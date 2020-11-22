@@ -42,4 +42,19 @@ construtor(props){
 ```
 
 
+React的生命周期函数：
+a.挂载周期函数：
+1.constructor
+2.componentWillMount
+3.render
+4.componentDidMount
 
+b.组件数据更新生命周期函数：
+componentWillReceiveProps ==> 在父组件里面改变props传值的时候触发，几乎用不到
+1.sholdComponentUpDate ==> 是否更新数据，如果返回true才会更新数据
+2.componentWillUpdate
+3.render
+4.componentDidUpdate
+
+c.组件销毁生命周期函数：
+1.componentWillUnmount  ==> 哪里销毁在哪里用
